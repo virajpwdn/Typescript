@@ -1,0 +1,48 @@
+First we have to install node, tailwind
+app.ts jo file hai wo compile hone ke baad app.js mai convert hogi
+tsc --watch -> TO check errors in realtime
+
+
+Data Types in tailwind
+1. Number
+2. Character
+3. String
+4. Boolean
+
+var
+let
+const
+
+Primitive and Reference
+
+Primitive Types = Number, Character, String, Boolean
+
+Reference -> [] {} ()
+
+let arr = [] -> Square bracket means array
+The differnece of array in js and ts is that we can only pass simliar set of data in array. like for example in one array we cannot and number and string both, but in javascript we can do this
+
+
+let arr: number[] = [1,2,3,4] -> in this array now we can only pass numbers, when passed strings in will throw an error althogh it will compile
+
+What are tuples?
+in tuple we have to predefined what data we are passing in array, tuple means fixed
+
+let arr:[String, Number] = ["Air", 10]
+
+What are enums?
+-> Enumerations, simliar to objects key value pair but instead of : we should use = ex are as follows
+enum userRoles{
+    ADMIN = "admin",
+    GUEST = "guest",
+    SUPERADMIN = "superadmin",
+}
+
+userRoles.ADMIN
+
+enum statusCodes {
+    ABANDOND = "abandonded status code 500",
+    NOTFOUND = "Status code not found"
+}
+
+statusCodes.NOTFOUND

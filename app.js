@@ -23,14 +23,6 @@ function abcd() {
     let sum = num1 + num2;
     return sum;
 }
-console.log(abcd);
-function bcd() {
-    while (true) {
-    }
-    // let d:number = 12;
-}
-bcd();
-console.log("hello");
 function inheritence(obj) {
 }
 function getDataUser(obj) {
@@ -42,3 +34,31 @@ function getdatauser(a, b) {
     a = 12;
     b = "username";
 }
+class Device {
+    constructor() {
+        this.name = "Apple";
+        this.price = 2000000;
+        this.category = "digital";
+    }
+}
+let d1 = new Device();
+let d2 = new Device();
+class BottleMarker {
+    constructor(brand, price, color, material) {
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+        this.material = material;
+    }
+}
+let newBottle = new BottleMarker("Louis Phille", 50000, "gold", "metal");
+class biscuitMaker {
+    constructor(brand, flavour, isMaida, price) {
+        this.brand = brand;
+        this.flavour = flavour;
+        this.isMaida = isMaida;
+        this.price = price;
+    }
+}
+let darkfantasy = new biscuitMaker("dairy milk", "chocolate", false, 12);
+console.log(darkfantasy);

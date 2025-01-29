@@ -241,8 +241,63 @@ function greet(name: StringOrNull): void {
 
 ---
 
+## Classes and Objects
+Classes provide a blueprint for creating objects, encapsulating data and methods.
+
+### Example of a Class
+```typescript
+class Device {
+  name = "Apple";
+  price = 2000000;
+  category = "digital";
+}
+
+const d1 = new Device();
+const d2 = new Device();
+```
+
+### Class Definition with Constructor
+Constructors initialize object properties when an object is created.
+
+#### Example 1
+```typescript
+class BottleMarker {
+  constructor(
+    public brand: string,
+    public price: number,
+    public color: string,
+    public material: string
+  ) {}
+}
+
+const newBottle = new BottleMarker("Louis Phille", 50000, "gold", "metal");
+```
+
+#### Example 2
+```typescript
+class BiscuitMaker {
+  public brand: string;
+  public flavour: string;
+  public isMaida: boolean;
+  public price: number;
+
+  constructor(brand: string, flavour: string, isMaida: boolean, price: number) {
+    this.brand = brand;
+    this.flavour = flavour;
+    this.isMaida = isMaida;
+    this.price = price;
+  }
+}
+
+const darkFantasy = new BiscuitMaker("Dairy Milk", "chocolate", false, 12);
+
+console.log(darkFantasy);
+```
+
+---
+
 ## Summary
-TypeScript enhances JavaScript by adding static typing, which helps prevent runtime errors and makes code more maintainable. Understanding core concepts like type annotations, interfaces, enums, and special types (e.g., `any`, `unknown`, `void`) is key to writing robust applications.
+TypeScript enhances JavaScript by adding static typing, which helps prevent runtime errors and makes code more maintainable. Understanding core concepts like type annotations, interfaces, enums, classes, and special types (e.g., `any`, `unknown`, `void`) is key to writing robust applications.
 
 ---
 

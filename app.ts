@@ -27,17 +27,16 @@ function abcd(): Number{
     return sum;
 }
 
-console.log(abcd);
+// console.log(abcd);
 
-function bcd(): never{
-    while(true){
+// function bcd(): never{
+//     while(true){
 
-    }
-    // let d:number = 12;
-}
+//     }
+//     // let d:number = 12;
+// }
 
-bcd();
-console.log("hello");
+
 
 
 interface user{
@@ -73,3 +72,36 @@ function getdatauser(a: Number, b: String){
     b = "username"
 }
 
+class Device{
+    name = "Apple"
+    price = 2000000
+    category = "digital"
+}
+
+let d1 = new Device();
+let d2 = new Device();
+
+class BottleMarker{
+    constructor(public brand: String, public price: Number, public color: String, public material: String){
+
+    }
+}
+
+let newBottle = new BottleMarker("Louis Phille", 50000, "gold", "metal")
+
+class biscuitMaker{
+    public brand;
+    public flavour;
+    public isMaida;
+    public price;
+    constructor(brand: string, flavour: string, isMaida:boolean, price: number){
+        this.brand = brand;
+        this.flavour = flavour;
+        this.isMaida = isMaida;
+        this.price = price;
+    }
+}
+
+let darkfantasy = new biscuitMaker("dairy milk", "chocolate", false, 12);
+
+console.log(darkfantasy)
